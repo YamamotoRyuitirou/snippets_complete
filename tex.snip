@@ -1,0 +1,829 @@
+snippet     mathexpression
+abbr        $ expression $
+  $${1:expression}$${2}
+
+# ========== ENVIRONMENT ==========
+
+snippet     begin
+alias       \begin
+  \begin{${1:type}}
+    ${2}
+  \end{$1}
+  ${0}
+
+snippet list
+alias   \begin{list}
+  \begin{list}
+    ${1}
+  \end{list}
+  ${0}
+
+snippet quotation
+alias   \begin{quotation}
+  \begin{quotation}
+    ${1}
+  \end{quotation}
+  ${0}
+
+snippet description
+alias   \begin{description}
+  \begin{description}
+    \item ${1}
+  \end{description}
+  ${0}
+
+snippet sloppypar
+alias   \begin{sloppypar}
+  \begin{sloppypar}
+    ${1}
+  \end{sloppypar}
+  ${0}
+
+snippet enumerate
+alias   \begin{enumerate}
+  \begin{enumerate}
+    \item ${1}
+  \end{enumerate}
+  ${0}
+
+snippet theindex
+alias   \begin{theindex}
+  \begin{theindex}
+    ${1}
+  \end{theindex}
+  ${0}
+
+snippet itemize
+alias   \begin{itemize}
+  \begin{itemize}
+    \item ${1}
+  \end{itemize}
+
+snippet titlepage
+alias   \begin{titlepage}
+  \begin{titlepage}
+    ${1}
+  \end{titlepage}
+  ${0}
+
+snippet verbatim
+alias   \begin{verbatim}
+  \begin{verbatim}
+    ${1}
+  \end{verbatim}
+  ${0}
+
+snippet verbatimtab
+alias   \begin{verbatimtab}
+  \begin{verbatimtab}[${1:8}]
+    ${2}
+  \end{verbatim}
+  ${0}
+
+snippet trivlist
+alias   \begin{trivlist}
+  \begin{trivlist}
+    ${1}
+  \end{trivlist}
+  ${0}
+
+snippet verse
+alias   \begin{verse}
+  \begin{verse}
+    ${1}
+  \end{verse}
+  ${0}
+
+snippet table
+alias   \begin{table}
+  \begin{table}
+    ${1}
+  \end{table}
+  ${0}
+
+snippet thebibliography
+alias   \begin{thebibliography}
+  \begin{thebibliography}
+    ${1}
+  \end{thebibliography}
+  ${0}
+
+snippet tabbing
+alias   \begin{tabbing}
+  \begin{tabbing}
+    ${1}
+  \end{tabbing}
+  ${0}
+
+snippet note
+alias   \begin{note}
+  \begin{note}
+    ${1}
+  \end{note}
+  ${0}
+
+snippet tabular
+alias   \begin{tabular}
+  \begin{tabular}{${1}}
+  ${2}
+  \end{tabular}
+
+snippet overlay
+alias   \begin{overlay}
+  \begin{overlay}
+    ${1}
+  \end{overlay}
+  ${0}
+
+snippet array
+alias   \begin{array}
+  \begin{array}
+    ${1}
+  \end{array}
+  ${0}
+
+snippet slide
+alias   \begin{slide}
+  \begin{slide}
+    ${1}
+  \end{slide}
+  ${0}
+
+snippet displaymath
+alias   \begin{displaymath}
+  \begin{displaymath}
+    ${1}
+  \end{displaymath}
+  ${0}
+
+snippet abstract
+alias   \begin{abstract}
+  \begin{abstract}
+    ${1}
+  \end{abstract}
+  ${0}
+
+snippet eqnarray
+alias   \begin{eqnarray}
+  \begin{eqnarray}
+    ${1}
+  \end{eqnarray}
+  ${0}
+
+snippet eqnarray*
+alias   \begin{eqnarray*}
+  \begin{eqnarray*}
+    ${1}
+  \end{eqnarray}
+  ${0}
+
+snippet appendix
+alias   \begin{appendix}
+  \begin{appendix}
+    ${1}
+  \end{appendix}
+  ${0}
+
+snippet equation
+alias   \begin{equation}
+  \begin{equation}
+    ${1}
+  \end{equation}
+  ${0}
+
+snippet center
+alias   \begin{center}
+  \begin{center}
+    ${1}
+  \end{center}
+  ${0}
+
+snippet document
+alias   \begin{document}
+  \begin{document}
+    ${1}
+  \end{document}
+  ${0}
+
+snippet figure
+alias   \begin{figure}
+  \begin{figure}
+    \begin{center}
+      \includegraphics[${1:width=}]{${2}}
+      \caption{${3}}
+      \label{${4}}
+    \end{center}
+  \end{figure}
+  ${0}
+
+snippet filecontents
+alias   \begin{filecontents}
+  \begin{filecontents}
+    ${1}
+  \end{filecontents}
+  ${0}
+
+snippet lrbox
+alias   \begin{lrbox}
+  \begin{lrbox}
+    ${1}
+  \end{lrbox}
+  ${0}
+
+snippet flushleft
+alias   \begin{flushleft}
+  \begin{flushleft}
+    ${1}
+  \end{flushleft}
+  ${0}
+
+snippet minipage
+alias   \begin{minipage}
+  \begin{minipage}<${1}>[${2:t}]{${3}zw}
+    ${4}
+  \end{minipage}
+  ${0}
+
+snippet flushright
+alias   \begin{flushright}
+  \begin{flushright}
+    ${1}
+  \end{flushright}
+  ${0}
+
+snippet picture
+alias   \begin{picture}
+  \begin{picture}
+    ${1}
+  \end{picture}
+  ${0}
+
+snippet math
+alias   \begin{math}
+  \begin{math}
+    ${1}
+  \end{math}
+  ${0}
+
+snippet quote
+alias   \begin{quote}
+  \begin{quote}
+  ${1}
+  \end{quote}
+  ${0}
+
+# ========== SECTION ==========
+
+snippet part
+alias   \begin{part}
+  \begin{part}
+    ${1}
+  \end{part}
+  ${0}
+
+snippet chapter
+alias   \begin{chapter}
+  \begin{chapter}
+    ${1}
+  \end{chapter}
+  ${0}
+
+snippet \chapter
+alias   \chapter{
+  \chapter{${1}}
+  ${0}
+
+snippet section
+alias   \begin{section}
+  \begin{section}
+    ${1}
+  \end{section}
+  ${0}
+
+snippet \section
+alias   \section{
+  \section{${1}}
+  ${0}
+
+snippet subsection
+alias   \begin{subsection}
+  \begin{subsection}
+    ${1}
+  \end{subsection}
+  ${0}
+
+snippet \subsection
+alias   \subsection{
+  \subsection{${1}}
+  ${0}
+
+snippet subsubsection
+alias   \begin{subsubsection}
+  \begin{subsubsection}
+    ${1}
+  \end{subsubsection}
+  ${0}
+
+snippet \subsubsection
+alias   \subsubsection{
+  \subsubsection{${1}}
+  ${0}
+
+snippet paragraph
+alias   \begin{paragraph}
+  \begin{paragraph}
+    ${1}
+  \end{paragraph}
+  ${0}
+
+snippet \paragraph
+alias   \paragraph{
+  \paragraph{${1}}
+  ${0}
+
+snippet subparagraph
+alias   \begin{subparagraph}
+  \begin{subparagraph}
+    ${1}
+  \end{subparagraph}
+  ${0}
+
+snippet \subparagraph
+alias   \subparagraph{
+  \subparagraph{${1}}
+  ${0}
+
+# ========== FONT ==========
+
+snippet bfseries
+alias   \begin{bfseries}
+  \begin{bfseries}
+    ${1}
+  \end{bfseries}
+
+snippet mdseries
+alias   \begin{mdseries}
+  \begin{mdseries}
+    ${1}
+  \end{mdseries}
+
+snippet ttfamily
+alias   \begin{ttfamily}
+  \begin{ttfamily}
+    ${1}
+  \end{ttfamily}
+
+snippet sffamily
+alias   \begin{sffamily}
+  \begin{sffamily}
+    ${1}
+  \end{sffamily}
+
+snippet rmfamily
+alias   \begin{rmfamily}
+  \begin{rmfamily}
+    ${1}
+  \end{rmfamily}
+
+snippet upshape
+alias   \begin{upshape}
+  \begin{upshape}
+    ${1}
+  \end{upshape}
+
+snippet slshape
+alias   \begin{slshape}
+  \begin{slshape}
+    ${1}
+  \end{slshape}
+
+snippet scshape
+alias   \begin{scshape}
+  \begin{scshape}
+    ${1}
+  \end{scshape}
+
+snippet itshape
+alias   \begin{itshape}
+  \begin{itshape}
+    ${1}
+  \end{itshape}
+
+# ========== OTHERS ==========
+snippet usepackage
+alias   \usepackage
+  \usepackage${1:[${2\}]}{${3}}
+  ${0}
+
+snippet \ref
+alias \ref{
+  \ref{${1}}${0}
+
+snippet \label
+alias \label{
+  \label{${1}}${0}
+
+snippet \cite
+alias \cite{
+  \cite{${1}}${0}
+
+# ========== MYSNIPPETS==========
+snippet kundoku{}{}{}{}
+alias   \kundoku
+  \kundoku{${1}}{${2}}{${3}}{${4}}${0}
+
+snippet firstcolumn
+alias   \firstcolumn{
+  \firstcolumn{${1:tangenName}}{${2:kyokashoPageNumber}}{${3:1}}
+  ${0}
+
+snippet rensuji
+alias   \rensuji
+  \rensuji{${1:Number}}${0}
+
+snippet rytalph
+alias   \rytalph
+  \rytalph{${1:A}}${0}
+
+snippet qt
+alias   qt
+  \begin{quote}
+  \begin{tabular}
+  \end{tabular}
+  \end{quote}
+
+snippet kana
+alias   \kana
+  \kana{${1:kanji}}{${2:hurigana}}${0}
+
+snippet rykansiwarigaki
+alias   \rykansiwarigaki
+  \rykansiwarigaki{${1}==}%
+  ${0}
+
+snippet ryotiboxkakko
+alias   \rytoiboxkakko
+  \rytoiboxkakko{${1}}
+
+snippet rygosyaku
+alias   \rygosyaku
+  \rygosyaku
+    ${1}:
+    ${2}:
+  ${0}
+
+snippet rygosyakubox
+alias   \rygosyakubox
+  \rygosyakubox{${1}}${0}
+
+snippet rykanbunquestion
+alias   \rykanbunquestion
+  \begin{description}
+  \rykanbunquestion
+  {${1:question}}
+  {}
+  {${2:answer}}
+  \end{description}
+  ${0}
+snippet rykanbungosyaku
+alias   \rykanbungosyaku
+  \rykanbungosyaku
+  {${1:Kuhou}}
+  {${2:Yomikata}}
+  {${3:Kakikudasikata}}
+  {${4:Imi}}
+
+snippet testfst
+alias   \testfst
+  \testfst{${1:kousaName}}{${2:GakunenAndClass}}{${3:KyoukaName And PageName}}{}
+  ${0}
+
+snippet testkaitouyoushifst
+alias   \testkaitouyoushifst
+  \testkaitouyoushifst{${1:kousaName}}{${2:GakunenAndClass}}{${3:KyoukaName}{\scriptsize \rensuji{${4:score}}点 }}{\rensuji{${5:Gakunen}}年\rytalph{${6:Class}}組}
+
+snippet sentakusihiragana
+alias   sentakusihiragana
+  \begin{quote}
+  \begin{tabular}{{${1:4}}{l}}
+  \ryHiraganasentakusi&${2:sentakusi} &
+  \ryHiraganasentakusi&${3:sentakusi} &
+  \ryHiraganasentakusi&${4:sentakusi} &
+  \ryHiraganasentakusi&${5:sentakusi} \\
+  \end{tabular}
+  \end{quote}
+  \rysentakusireset
+
+snippet sentakusiajsuji
+alias   sentakusiajsuji
+  \begin{quote}
+  \begin{tabular}{{${1:4}}{l}}
+  \ryajsuji &${2:sentakusi} &
+  \ryajsuji &${3:sentakusi} &
+  \ryajsuji &${4:sentakusi} &
+  \ryajsuji &${5:sentakusi} \\
+  \end{tabular}
+  \end{quote}
+  \rysentakusireset
+
+snippet sentakukatakana
+alias   sentakusikatakana
+  \begin{quote}
+  \begin{tabular}{*{${1:4}}{l}}
+  \ryKatakanasentakusi& ${2:sentakusi} &
+  \ryKatakanasentakusi& ${3:sentakusi} &
+  \ryKatakanasentakusi& ${4:sentakusi} &
+  \ryKatakanasentakusi& ${5:sentakusi}\\
+  \end{tabular}
+  \end{quote}
+  \rysentakusireset
+  ${0}
+
+snippet sentakualph
+alias   sentakusialph
+  \begin{quote}
+  \begin{tabular}{*{${1:4}}{l}}
+  \ryalphsentakusi& ${2:sentakusi} &
+  \ryalphsentakusi& ${3:sentakusi} &
+  \ryalphsentakusi& ${4:sentakusi} &
+  \ryalphsentakusi& ${5:sentakusi} \\
+  \end{tabular}
+  \end{quote}
+  \rysentakusireset
+  ${0}
+
+snippet sentakulargealph
+alias   sentakusilargealph
+  \begin{quote}
+  \begin{tabular}{*{${1:4}}{l}}
+  \ryAlphsentakusi& ${2:sentakusi} &
+  \ryAlphsentakusi& ${3:sentakusi} &
+  \ryAlphsentakusi& ${4:sentakusi} &
+  \ryAlphsentakusi& ${5:sentakusi} \\
+  \end{tabular}
+  \end{quote}
+  \rysentakusireset
+  ${0}
+
+snippet rykatakanakaitouran
+alias   kaitourankatakana
+  \ryKatakanasentakusi&\hosenakibox[\huge]{${1}}\haiten{${2:2}}&
+
+snippet ryhiraganakaitouran
+alias   kaitouranhiragana
+  \ryHiraganasentakusi&\hosenakibox[\huge]{${1}}\haiten{${2:2}}&
+
+snippet ryalphkaitouran
+alias   kaitouranalph
+  \ryalphsentakusi&\hosenakibox[\huge]{${1}}\haiten{${2:2}}&
+
+snippet rylargealphkaitouran
+alias   kaitouranlargealph
+  \ryAlphsentakusi&\hosenakibox[\huge]{${1}}\haiten{${2:2}}&
+
+snippet ryajMarukaitouran
+alias   kaitouranajmaru
+  \ryajsuji&\hosenakibox[\huge]{${1}}\haiten{${2:2}}&
+
+snippet kaitouran
+alias   kaitouran
+  \begin{tabular}[t]{|*{${1:1}}{l|}}${2}
+  ${0}
+  \end{tabular}
+  \rysentakusireset%記号をゼロにする
+  \\[-1pt]
+
+snippet kaitourantoi
+alias   kaitourantoi
+  \rytestques&\hosenakibox[\huge]{${1}}\haiten{${2:2}}&${3}
+
+snippet rytestkaitoubox
+alias   \rytestkaitoubox
+  \rytestkaitoubox{${1}}
+
+snippet rybobu
+alias   \rybobu
+  \rybobu{${1}}
+
+snippet kaitouransotowaku
+alias   kaitouranhyougumi
+  {\normalsize 問題一\par}
+  \begin{rykaitouyousi}
+  \vskip-0.5zw
+  \noindent
+  ${1}
+  \rydaimongoukeiten
+  \end{rykaitouyousi}
+  \par
+
+snippet kanbuntesttemplate
+alias   kanbuntesttemplate
+  %設定
+  \documentclass[b5j,12pt]{tarticle}
+  \usepackage{plext,graphicx,otf,ascmac,sfkanbun,tkokugo,furikana,tsayusen,tnamisen,shiika,rykoten,rytestsetting}%日本語いろいろスタイル
+  % sentakusi --- 問題文用のスニペット
+  % kaitouran --- 解答欄用のスニペット
+  \begin{document}
+  %1ページ目最初の二行
+  \testfst{春季課題考査}{三年家政科}{古典　一枚目}{}
+    {\bf 問題一}　次の文章を読んで後の問題に答えなさい。設問の都合上、訓点を削除した箇所がある。\\[-3zw]
+    \setcounter{rybaselinestretch}{3}%行間を三倍にする
+    \rykyokasyokanbun{%教科書漢文の体裁で問題文を出力
+    \hskip1zh
+    }
+  \vskip1zw
+    \rytesttoi
+    \rytesttoi
+    \rytesttoi
+    \rytesttoi
+    \rytesttoi
+    \rytesttoi
+    \rytesttoi
+    \rytesttoi
+  %%%%%%   問題二   %%%%%%
+    \ryResetCount
+    \newpage
+    {\bf 問題二}　次の文章を読んで後の問題に答えなさい。設問の都合上、訓点を削除した箇所がある。\\[1zw]
+    %本文をここに挿入
+  \vskip1zw
+    %問題二：ここから出題
+    \rytesttoi
+    \rytesttoi
+    \rytesttoi
+    \rytesttoi
+    \rytesttoi
+    \rytesttoi
+    \rytesttoi
+    \rytesttoi
+  %%%%%%   問題三   %%%%%%
+    \ryResetCount
+    \newpage
+    {\bf 問題二}　次の文章を読んで後の問題に答えなさい。設問の都合上、訓点を削除した箇所がある。\\[1zw]
+    %本文をここに挿入
+  \vskip1zw
+    %問題三：ここから出題
+    \rytesttoi
+    \rytesttoi
+    \rytesttoi
+    \rytesttoi
+    \rytesttoi
+    \rytesttoi
+    \rytesttoi
+    \rytesttoi
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  %%%%%%%%%%%   解答用紙の作成   %%%%%%%%%%%
+  \ryResetCount
+  \newpage
+  %テスト解答用紙を作成
+  \def\testkaitou{
+  %問題一
+    \testkaitouyoushifst{春季課題考査}{三年家政科}{古典\hskip1zh解答用紙{\scriptsize \rensuji{50}点 }}{\rensuji{2}年\rytalph{A}組}
+    {\normalsize 問題一\par}
+    \begin{rykaitouyousi}
+    \vskip-0.4zw
+    \noindent
+    \begin{tabular}[t]{|*{4}{l|}}
+    \rytestques&\rytestkaitoubox{テスト}\haiten{2}\\ 
+    \end{tabular}
+    \rysentakusireset%記号をゼロにする
+    \\[-1pt]
+    \rydaimongoukeiten
+    \end{rykaitouyousi}
+    \par
+  %問題二
+    \ryResetCount
+    \noindent
+    {\normalsize 問題二\par }
+    \vskip-.5zw
+    \begin{rykaitouyousi}
+    \noindent
+    \begin{tabular}[t]{|*{4}{l|}}
+      \rytestques&{\scriptsize \ryKatakanasentakusi}&\rytestkaitoubox{テスト}\haiten{2}\\
+    \end{tabular}
+    \rysentakusireset%記号をゼロにする
+    \\[-1pt]
+    \rydaimongoukeiten
+    \end{rykaitouyousi}
+    \rytestsum
+  }
+  \testkaitou
+  \newpage
+  \ryResetCount
+  \begin{forteacher}
+  \testkaitou
+  \end{forteacher}
+  \end{document}
+
+snippet fbox
+alias   \fbox
+  \fbox{${1}}${0}
+
+snippet ajMaru
+alias   \ajMaru
+  \ajMaru{${1}}${0}
+
+snippet baselinestretch
+alias   \baselinestretch{}
+  \baselinestretch{${1}}
+
+snippet     \sayubosen
+alias       \sayubosen
+  \sayubosen{${1}}${0}
+
+snippet kaitoubox
+alias   \rytestkaitoubox
+  \rytestkaitoubox{${1}}${0}
+
+snippet rytoibox
+alias   \rytoibox
+  \rytoibox{${1}}${0}
+
+snippet hosenakibox
+alias   \hosenakibox
+  \hosenakibox[${1}]{${2}}${0}
+
+snippet hosenakiboxkakko
+alias   \hosenakiboxkakko
+  \hosenakiboxkakko[${1}]{${2}}${0}
+
+snippet parbox
+alias   \parbox
+  \parbox[t]{${1}zh}{${2}}${0}
+
+snippet baselinestr
+alias   \baselinestr
+  \def\baselinestretch{${1}}\selectfont${0}
+
+snippet rykyokasyomaru
+alias   \rykyokasyomaru
+  \rykyokashomaru{${1}}
+
+snippet \begin{itemfbox}
+alias   \begin{itemfbox}
+  \begin{itembox}[l]{\fbox{${1}}}
+    ${2}
+  \end{itembox}
+
+snippet itembox
+alias   \begin{itembox}
+  \begin{itembox}[l]{${1}}
+    ${2}
+  \end{itembox}
+
+snippet pbox<y>[3zw]{}
+alias   \pbox
+  \pbox<${1:y or t}>[${2}zw]{${3}}${0}
+
+snippet raisebox
+alias   \raisebox
+  \raisebox{${1}zw}{${2}}${0}
+
+snippet raisescriptbox
+alias   \raisescriptbox
+  {\scriptsize \raisebox{${1}zw}{${2}}${0}}
+
+snippet arraystretch
+alias   \arraystretch
+  \renewcommand\arraystretch{${1:1}} 
+
+snippet haiten
+alias   \haiten
+  \haiten{${1:2}}${0}
+
+snippet rykuuranalph
+alias   \rykuuranalph
+  \rykuuran{${1:1}}{${2:A}}${0}
+
+snippet  testmondainum
+alias    \testmondainum
+  \testmondainum{${1}}
+
+snippet  testmondainumreset
+alias    \testmondainumreset
+  \testmondainumreset
+
+snippet  kaitouyousipagebegin
+alias    \kaitouyousipagebegin
+  \kaitouyousipagebegin
+
+snippet  testkaitoumondai
+alias    \testkaitoumondai
+  \testkaitoumondai{
+    ${1}
+  }
+
+snippet  backslashbox
+alias    \backslashbox
+  \backslashbox{${1}}{${2}}
+
+snippet  slashbox
+alias    \slashbox
+  \slashbox{${1}}{${2}}
+
+snippet     thispagestyle
+alias       \thispagestyle
+  \thispagestyle{${1}}${0}
+
+snippet     markright
+alias       \markright
+  \markright{${1}}${0}
