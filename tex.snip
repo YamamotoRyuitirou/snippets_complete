@@ -30,7 +30,6 @@ alias   \begin{description}
   \begin{description}
     \item ${1}
   \end{description}
-  ${0}
 
 snippet sloppypar
 alias   \begin{sloppypar}
@@ -827,3 +826,17 @@ alias       \thispagestyle
 snippet     markright
 alias       \markright
   \markright{${1}}${0}
+
+snippet  scalebox
+alias    \scalebox
+  \scalebox{${1:bairitu}}[${2:tatebairitu}]{${3:naiyou}}${0}
+
+snippet makeatletter
+alias   \makeatletter
+  \makeatletter
+  ${1}
+  \makeatother
+
+snippet ryfor
+alias   \ryfor
+  \ryfor{${1:word}}{${2:skip}}{${3:limit}}
