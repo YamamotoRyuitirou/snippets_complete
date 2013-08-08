@@ -839,4 +839,10 @@ alias   \makeatletter
 
 snippet ryfor
 alias   \ryfor
-  \ryfor{${1:word}}{${2:skip}}{${3:limit}}
+  \ryfor{${1:0}}{${2:skip}}{${3:limit}}{${4:word,ij}}
+
+snippet newcounter
+alias   \newcounter
+  \newcounter{${1}}
+  \setcounter{${2}}{${3:0}}
+  \def\{${4}}{\addtocounter{${5}}{1}\the${6}}${0}
