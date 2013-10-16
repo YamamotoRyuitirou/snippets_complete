@@ -722,11 +722,11 @@ alias   \ajMaru
   \ajMaru{${1}}${0}
 
 snippet baselinestretch
-alias   \baselinestretch{}
-  \baselinestretch{${1}}
+alias   baselinestretch{}
+  \renewcommand{\baselinestretch}{${1:1}}\selectfont
 
-snippet     \sayubosen
-alias       \sayubosen
+snippet \sayubosen
+alias   \sayubosen
   \sayubosen{${1}}${0}
 
 snippet kaitoubox
