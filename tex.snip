@@ -43,7 +43,6 @@ alias   \begin{enumerate}
   \begin{enumerate}
     \item ${1}
   \end{enumerate}
-  ${0}
 
 snippet theindex
 alias   \begin{theindex}
@@ -265,11 +264,10 @@ alias   \begin{math}
   ${0}
 
 snippet quote
-alias   \begin{quote}
+alias   quote
   \begin{quote}
   ${1}
   \end{quote}
-  ${0}
 
 # ========== SECTION ==========
 
@@ -529,14 +527,13 @@ snippet sentakukatakana
 alias   sentakusikatakana
   \begin{quote}
   \begin{tabular}{*{${1:4}}{l}}
-  \ryKatakanasentakusi& ${2:sentakusi} &
-  \ryKatakanasentakusi& ${3:sentakusi} &
-  \ryKatakanasentakusi& ${4:sentakusi} &
+  \ryKatakanasentakusi& ${2:sentakusi}
+  \ryKatakanasentakusi& ${3:sentakusi}
+  \ryKatakanasentakusi& ${4:sentakusi}
   \ryKatakanasentakusi& ${5:sentakusi}\\
   \end{tabular}
   \end{quote}
   \rysentakusireset
-  ${0}
 
 snippet sentakualph
 alias   sentakusialph
@@ -860,3 +857,7 @@ alias   \begin{screen}
 snippet itemsep
 alias   \setlength
   \setlength{\itemsep}{${1:3mm}}
+
+snippet enumi
+alias   enumi
+  \def\labelenumi{${1}\theenumi}
