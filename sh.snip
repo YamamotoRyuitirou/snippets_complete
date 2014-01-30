@@ -72,3 +72,10 @@ alias   complete
     fi
   }
   complete -F _${4} ${5}
+
+snippet select
+alias   select
+  select ${1:option} in ${2:words}
+  do
+    ${3}
+  done
